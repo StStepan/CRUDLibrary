@@ -1,0 +1,17 @@
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.csprojAssemblyReference.cache
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.Properties.Resources.resources
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.csproj.GenerateResource.cache
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.csproj.CoreCompileInputs.cache
+D:\Учеба\CodeStorage\C_sharp_experience\bin\Debug\C_sharp_experience.exe.config
+D:\Учеба\CodeStorage\C_sharp_experience\bin\Debug\C_sharp_experience.exe
+D:\Учеба\CodeStorage\C_sharp_experience\bin\Debug\C_sharp_experience.pdb
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.exe
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.pdb
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.MainForm.resources
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.MediaForms.FMedia.resources
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.MediaForms.FAuthored.resources
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.MediaForms.FPrint.resources
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.MediaForms.AuthorForms.FBook.resources
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.MediaForms.AuthorForms.FScientificReport.resources
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.MediaForms.PrintForms.FMagazine.resources
+D:\Учеба\CodeStorage\C_sharp_experience\obj\Debug\C_sharp_experience.MediaForms.PrintForms.FNewspaper.resources
