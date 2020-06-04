@@ -28,6 +28,7 @@ namespace C_sharp_experience.MediaElements
         [Description("Без категории")]
         none
     }
+    [Serializable]
     public class CategoryBook
     {
         public TypeCategoryBook typeCategoryBook { get; set; }

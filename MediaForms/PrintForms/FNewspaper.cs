@@ -69,53 +69,28 @@ namespace C_sharp_experience.MediaForms.PrintForms
             cb.DataSource = list;
         }
 
-        public void SetAudience(TypeAudience type)
+        public void SetAudience(Audience audience)
         {
-            switch (type)
-            {
-                case TypeAudience.adults: comboBAudience.SelectedIndex = 0; break;
-                case TypeAudience.elderly: comboBAudience.SelectedIndex = 1; break;
-                case TypeAudience.kids: comboBAudience.SelectedIndex = 2; break;
-                case TypeAudience.teens: comboBAudience.SelectedIndex = 3; break;
-                case TypeAudience.youth: comboBAudience.SelectedIndex = 4; break;
-            }
+            comboBAudience.SelectedIndex = (int)audience.typeAudience;
         }
 
-        public TypeAudience GetAudience()
+        public Audience GetAudience()
         {
-            switch (comboBAudience.SelectedIndex)
-            {
-                case 0: return TypeAudience.adults;
-                case 1: return TypeAudience.elderly;
-                case 2: return TypeAudience.kids;
-                case 3: return TypeAudience.teens;
-                case 4: return TypeAudience.youth;
-            }
-            return TypeAudience.adults;
+            TypeAudience typeAudience = (TypeAudience)comboBAudience.SelectedIndex;
+            Audience audience = new Audience(typeAudience);
+            return audience;
         }
 
         public bool GetOfficial()
         {
-            if (radioBOfficialTrue.Checked == true)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return radioBOfficialTrue.Checked;
         }
 
         public void SetOfficial(bool official)
         {
-            if (official == true)
-            {
-                radioBOfficialTrue.Checked = true;
-            }
-            else
-            {
-                radioBOfficialTrue.Checked = false;
-            }
+
+            radioBOfficialTrue.Checked = official;
+
         }
 
 

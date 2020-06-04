@@ -20,6 +20,7 @@ namespace C_sharp_experience.MediaElements
         [Description("Пенсионеры")]
         elderly
     }
+    [Serializable]
     public class Audience
     {
         public TypeAudience typeAudience { get; set; }

@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace C_sharp_experience.Medium
 {
+    [Serializable]
     public abstract class Media
     {
         public DateTime published { get; set; }

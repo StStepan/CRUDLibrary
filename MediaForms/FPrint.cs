@@ -54,29 +54,18 @@ namespace C_sharp_experience.MediaForms
             cb.DataSource = list;
         }
 
-        public void SetPereodicity(TypePereodicity type)
+        public void SetPereodicity(Pereodicity pereodicity)
         {
-            switch (type)
-            {
-                case TypePereodicity.daily: comboBPereodicity.SelectedIndex = 0; break;
-                case TypePereodicity.monthly: comboBPereodicity.SelectedIndex = 1; break;
-                case TypePereodicity.quartally: comboBPereodicity.SelectedIndex = 2; break;
-                case TypePereodicity.weekly: comboBPereodicity.SelectedIndex = 3; break;
-                case TypePereodicity.yearly: comboBPereodicity.SelectedIndex = 4; break;
-            }
+
+            comboBPereodicity.SelectedIndex = (int)pereodicity.typePereodicity;
         }
 
-        public TypePereodicity GetPereodicity()
+        public Pereodicity GetPereodicity()
         {
-            switch (comboBPereodicity.SelectedIndex)
-            {
-                case 0: return TypePereodicity.daily;
-                case 1: return TypePereodicity.monthly;
-                case 2: return TypePereodicity.quartally;
-                case 3: return TypePereodicity.weekly;
-                case 4: return TypePereodicity.yearly;
-            }
-            return TypePereodicity.daily;
+            
+            TypePereodicity typePereodicity = (TypePereodicity)comboBPereodicity.SelectedIndex;
+            Pereodicity pereodicity = new Pereodicity(typePereodicity);
+            return pereodicity;
         }
 
         public void SetIssueNum(int num)

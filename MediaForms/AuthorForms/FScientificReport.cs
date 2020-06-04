@@ -69,25 +69,16 @@ namespace C_sharp_experience.MediaForms.AuthorForms
             cb.DataSource = list;
         }
 
-        public void SetSubject(TypeSubject type)
+        public void SetSubject(Subject subject)
         {
-            switch (type)
-            {
-                case TypeSubject.appliedScience: comboBSubject.SelectedIndex = 0; break;
-                case TypeSubject.basicResearch: comboBSubject.SelectedIndex = 1; break;
-                case TypeSubject.researchAndDevelopment: comboBSubject.SelectedIndex = 2; break;
-            }
+            comboBSubject.SelectedIndex = (int)subject.typeSubject;
         }
 
-        public TypeSubject GetSubject()
+        public Subject GetSubject()
         {
-            switch (comboBSubject.SelectedIndex)
-            {
-                case 0: return TypeSubject.appliedScience;
-                case 1: return TypeSubject.basicResearch;
-                case 2: return TypeSubject.researchAndDevelopment;
-            }
-            return TypeSubject.appliedScience;
+            TypeSubject typeSubject = (TypeSubject)comboBSubject.SelectedIndex;
+            Subject subject = new Subject(typeSubject);
+            return subject;
         }
 
         public void EditScientificReport(ScientificReport report)

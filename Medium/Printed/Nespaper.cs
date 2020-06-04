@@ -10,10 +10,11 @@ using System.Drawing;
 
 namespace C_sharp_experience.Medium.Printed
 {
+    [Serializable]
     [MediaType("Газета")]
     public class Newspaper : PrintMedia
     {
-        public TypeAudience audience { get; set; }
+        public Audience audience { get; set; }
 
         public bool official { get; set; }
 

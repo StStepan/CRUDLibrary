@@ -26,6 +26,7 @@ namespace C_sharp_experience.MediaElements
         women
 
     }
+    [Serializable]
     public class CategoryMagazine
     {
         public TypeCategoryMag typeCategoryMag { get; set; }

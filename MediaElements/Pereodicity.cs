@@ -20,6 +20,7 @@ namespace C_sharp_experience.Attributes.MediaElements
         [Description("Ежегодично")]
         yearly
     }
+    [Serializable]
     public class Pereodicity
     {
         public TypePereodicity typePereodicity { get; set; }

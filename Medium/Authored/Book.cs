@@ -9,10 +9,11 @@ using C_sharp_experience.Attributes;
 
 namespace C_sharp_experience.Medium.Authored
 {
+    [Serializable]
     [MediaType("Книга")]
     public class Book:AuthorMedia
     {
-        public TypeCategoryBook category { get; set; }
+        public CategoryBook category { get; set; }
 
     }
 }

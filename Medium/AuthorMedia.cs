@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_sharp_experience.Medium
 {
+    [Serializable]
     abstract public class AuthorMedia : Media
     {
         public string author { get; set; }

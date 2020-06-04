@@ -69,34 +69,6 @@ namespace C_sharp_experience.MediaForms.PrintForms
             cb.DataSource = list;
         }
 
-        public void SetAudience(TypeCategoryMag type)
-        {
-            switch (type)
-            {
-                case TypeCategoryMag.fashion: comboBCategory.SelectedIndex = 0; break;
-                case TypeCategoryMag.humor: comboBCategory.SelectedIndex = 1; break;
-                case TypeCategoryMag.men: comboBCategory.SelectedIndex = 2; break;
-                case TypeCategoryMag.religious: comboBCategory.SelectedIndex = 3; break;
-                case TypeCategoryMag.satirical: comboBCategory.SelectedIndex = 4; break;
-                case TypeCategoryMag.wildlife: comboBCategory.SelectedIndex = 5; break;
-                case TypeCategoryMag.women: comboBCategory.SelectedIndex = 6; break;
-            }
-        }
-
-        public TypeCategoryMag GetAudience()
-        {
-            switch (comboBCategory.SelectedIndex)
-            {
-                case 0: return TypeCategoryMag.fashion;
-                case 1: return TypeCategoryMag.humor;
-                case 2: return TypeCategoryMag.men;
-                case 3: return TypeCategoryMag.religious;
-                case 4: return TypeCategoryMag.satirical;
-                case 5: return TypeCategoryMag.wildlife;
-                case 6: return TypeCategoryMag.women;
-            }
-            return TypeCategoryMag.fashion;
-        }
 
         private void textBVolume_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -126,34 +98,16 @@ namespace C_sharp_experience.MediaForms.PrintForms
             }
         }
 
-        public void SetCategory(TypeCategoryMag type)
+        public void SetCategory(CategoryMagazine category)
         {
-            switch (type)
-            {
-                case TypeCategoryMag.fashion: comboBCategory.SelectedIndex = 0; break;
-                case TypeCategoryMag.humor: comboBCategory.SelectedIndex = 1; break;
-                case TypeCategoryMag.men: comboBCategory.SelectedIndex = 2; break;
-                case TypeCategoryMag.religious: comboBCategory.SelectedIndex = 3; break;
-                case TypeCategoryMag.satirical: comboBCategory.SelectedIndex = 4; break;
-                case TypeCategoryMag.wildlife: comboBCategory.SelectedIndex = 5; break;
-                case TypeCategoryMag.women: comboBCategory.SelectedIndex = 6; break;
-
-            }
+            comboBCategory.SelectedIndex = (int)category.typeCategoryMag;
         }
 
-        public TypeCategoryMag GetCategory()
+        public CategoryMagazine GetCategory()
         {
-            switch (comboBCategory.SelectedIndex)
-            {
-                case 0: return TypeCategoryMag.fashion;
-                case 1: return TypeCategoryMag.humor;
-                case 2: return TypeCategoryMag.men;
-                case 3: return TypeCategoryMag.religious;
-                case 4: return TypeCategoryMag.satirical;
-                case 5: return TypeCategoryMag.wildlife;
-                case 6: return TypeCategoryMag.women;
-            }
-            return TypeCategoryMag.fashion;
+            TypeCategoryMag typeCategory = (TypeCategoryMag)comboBCategory.SelectedIndex;
+            CategoryMagazine category = new CategoryMagazine(typeCategory);
+            return category;
         }
 
         public void EditMagazine(Magazine magazine)

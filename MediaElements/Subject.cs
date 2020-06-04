@@ -16,6 +16,7 @@ namespace C_sharp_experience.MediaElements
         [Description("Научно-исследовательские работы")]
         researchAndDevelopment
     }
+    [Serializable]
     public class Subject
     {
         public TypeSubject typeSubject { get; set; }

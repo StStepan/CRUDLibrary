@@ -10,10 +10,11 @@ using System.Drawing;
 
 namespace C_sharp_experience.Medium.Printed
 {
+    [Serializable]
     [MediaType("Журнал")]
     public class Magazine : PrintMedia
     {
-        public TypeCategoryMag category { set; get; }
+        public CategoryMagazine category { set; get; }
 
         public int volume { set; get; }
 

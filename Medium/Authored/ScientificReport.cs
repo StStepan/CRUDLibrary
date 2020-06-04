@@ -8,11 +8,11 @@ using C_sharp_experience.Attributes;
 
 namespace C_sharp_experience.Medium.Authored
 {
-
+    [Serializable]
     [MediaType("Научная работа")]
     public class ScientificReport : AuthorMedia
     {
-        public TypeSubject subject { get; set; }
+        public Subject subject { get; set; }
 
     }
 

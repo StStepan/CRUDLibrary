@@ -72,38 +72,17 @@ namespace C_sharp_experience.MediaForms.AuthorForms
         }
 
 
-        public void SetCategory(TypeCategoryBook type)
+        public void SetCategory(CategoryBook category)
         {
-            switch (type)
-            {
-                case TypeCategoryBook.adventure: comboBCategory.SelectedIndex = 0; break;
-                case TypeCategoryBook.cyberpunk: comboBCategory.SelectedIndex = 1; break;
-                case TypeCategoryBook.detective: comboBCategory.SelectedIndex = 2; break;
-                case TypeCategoryBook.distopia: comboBCategory.SelectedIndex = 3; break;
-                case TypeCategoryBook.fantasy: comboBCategory.SelectedIndex = 4; break;
-                case TypeCategoryBook.postApocalyptic: comboBCategory.SelectedIndex = 5; break;
-                case TypeCategoryBook.romance: comboBCategory.SelectedIndex = 6; break;
-                case TypeCategoryBook.scienceFiction: comboBCategory.SelectedIndex = 7; break;
-                case TypeCategoryBook.none: comboBCategory.SelectedIndex = 8; break;
-
-            }
+            comboBCategory.SelectedIndex = (int)category.typeCategoryBook;
         }
 
-        public TypeCategoryBook GetCategory()
+        public CategoryBook GetCategory()
         {
-            switch (comboBCategory.SelectedIndex)
-            {
-                case 0: return TypeCategoryBook.adventure;
-                case 1: return TypeCategoryBook.cyberpunk;
-                case 2: return TypeCategoryBook.detective;
-                case 3: return TypeCategoryBook.distopia;
-                case 4: return TypeCategoryBook.fantasy;
-                case 5: return TypeCategoryBook.postApocalyptic;
-                case 6: return TypeCategoryBook.romance;
-                case 7: return TypeCategoryBook.scienceFiction;
-                case 8: return TypeCategoryBook.none;
-            }
-            return TypeCategoryBook.none;
+
+            TypeCategoryBook typeCategoryBook = (TypeCategoryBook)comboBCategory.SelectedIndex;
+            CategoryBook categoryBook = new CategoryBook(typeCategoryBook);
+            return categoryBook;
         }
         public void EditBook(Book book)
         {
