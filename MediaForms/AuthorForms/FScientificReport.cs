@@ -105,7 +105,8 @@ namespace C_sharp_experience.MediaForms.AuthorForms
             {
                 ScientificReport report = new ScientificReport();
                 EditScientificReport(report);
-                MainForm.AddMedia(report);
+                AddMedia add = MainForm.AddMedia;
+                add(report);
             }
             else
                 EditScientificReport(FinalReport);

@@ -31,7 +31,7 @@ namespace C_sharp_experience.MediaElements
     [Serializable]
     public class CategoryBook
     {
-        public TypeCategoryBook typeCategoryBook { get; set; }
+        public TypeCategoryBook typeCategoryBook { get; set; } = TypeCategoryBook.adventure;
 
         public CategoryBook(TypeCategoryBook typeCategoryBook)
         {

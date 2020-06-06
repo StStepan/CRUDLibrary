@@ -107,7 +107,8 @@ namespace C_sharp_experience.MediaForms.AuthorForms
             {
                 Book book = new Book();
                 EditBook(book);
-                MainForm.AddMedia(book);
+                AddMedia add = MainForm.AddMedia;
+                add(book);
             }
             else
                 EditBook(FinalBook);

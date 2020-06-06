@@ -19,7 +19,7 @@ namespace C_sharp_experience.MediaElements
     [Serializable]
     public class Subject
     {
-        public TypeSubject typeSubject { get; set; }
+        public TypeSubject typeSubject { get; set; } = TypeSubject.appliedScience;
 
         public Subject(TypeSubject typeSubject)
         {

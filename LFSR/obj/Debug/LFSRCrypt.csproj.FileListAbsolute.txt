@@ -1,0 +1,12 @@
+D:\Study\ООП\lab1.0\LFSRCrypt\bin\Debug\LFSRCrypt.dll
+D:\Study\ООП\lab1.0\LFSRCrypt\bin\Debug\LFSRCrypt.pdb
+D:\Study\ООП\lab1.0\LFSRCrypt\obj\Debug\LFSRCrypt.csprojAssemblyReference.cache
+D:\Study\ООП\lab1.0\LFSRCrypt\obj\Debug\LFSRCrypt.csproj.CoreCompileInputs.cache
+D:\Study\ООП\lab1.0\LFSRCrypt\obj\Debug\LFSRCrypt.dll
+D:\Study\ООП\lab1.0\LFSRCrypt\obj\Debug\LFSRCrypt.pdb
+D:\Study\ООП\lab1.0\lab1\LFSRCrypt\bin\Debug\LFSRCrypt.dll
+D:\Study\ООП\lab1.0\lab1\LFSRCrypt\bin\Debug\LFSRCrypt.pdb
+D:\Study\ООП\lab1.0\lab1\LFSRCrypt\obj\Debug\LFSRCrypt.csprojAssemblyReference.cache
+D:\Study\ООП\lab1.0\lab1\LFSRCrypt\obj\Debug\LFSRCrypt.csproj.CoreCompileInputs.cache
+D:\Study\ООП\lab1.0\lab1\LFSRCrypt\obj\Debug\LFSRCrypt.dll
+D:\Study\ООП\lab1.0\lab1\LFSRCrypt\obj\Debug\LFSRCrypt.pdb

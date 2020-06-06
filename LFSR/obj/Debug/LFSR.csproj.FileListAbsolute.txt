@@ -1,0 +1,5 @@
+D:\Учеба\CodeStorage\StStepan\OOP\LFSR\bin\Debug\LFSRCrypt.dll
+D:\Учеба\CodeStorage\StStepan\OOP\LFSR\bin\Debug\LFSRCrypt.pdb
+D:\Учеба\CodeStorage\StStepan\OOP\LFSR\obj\Debug\LFSR.csproj.CoreCompileInputs.cache
+D:\Учеба\CodeStorage\StStepan\OOP\LFSR\obj\Debug\LFSRCrypt.dll
+D:\Учеба\CodeStorage\StStepan\OOP\LFSR\obj\Debug\LFSRCrypt.pdb

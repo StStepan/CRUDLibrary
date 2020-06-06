@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using C_sharp_experience.MediaElements;
 using C_sharp_experience.Attributes;
 using C_sharp_experience.Medium.Printed;
+using C_sharp_experience.Medium;
 
 namespace C_sharp_experience.MediaForms.PrintForms
 {
@@ -18,6 +19,7 @@ namespace C_sharp_experience.MediaForms.PrintForms
     [FSuitableType((new Type[] { typeof(Newspaper) }))]
     public partial class FNewspaper : FPrint
     {
+        
         //Create an instance for edit/view/create
         private Newspaper FinalNewspaper = null;
         public FNewspaper()
@@ -124,11 +126,13 @@ namespace C_sharp_experience.MediaForms.PrintForms
             {
                 Newspaper newspaper = new Newspaper();
                 EditNewspaper(newspaper);
-                MainForm.AddMedia(newspaper);
+                AddMedia add = MainForm.AddMedia;
+                add(newspaper);
             }
             else
                 EditNewspaper(FinalNewspaper);
             Close();
+            
 
         }
     }

@@ -29,7 +29,7 @@ namespace C_sharp_experience.MediaElements
     [Serializable]
     public class CategoryMagazine
     {
-        public TypeCategoryMag typeCategoryMag { get; set; }
+        public TypeCategoryMag typeCategoryMag { get; set; } = TypeCategoryMag.fashion;
 
         public CategoryMagazine(TypeCategoryMag typeCategoryMag)
         {

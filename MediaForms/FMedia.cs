@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using C_sharp_experience.Medium;
 
 namespace C_sharp_experience.MediaForms
 {
     public partial class FMedia : Form
     {
+        public delegate void AddMedia(Media media);
         public FMedia()
         {
             InitializeComponent();

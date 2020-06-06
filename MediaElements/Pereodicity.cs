@@ -23,7 +23,7 @@ namespace C_sharp_experience.Attributes.MediaElements
     [Serializable]
     public class Pereodicity
     {
-        public TypePereodicity typePereodicity { get; set; }
+        public TypePereodicity typePereodicity { get; set; } = TypePereodicity.daily;
 
         public Pereodicity(TypePereodicity typePereodicity)
         {

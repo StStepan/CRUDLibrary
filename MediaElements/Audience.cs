@@ -23,7 +23,7 @@ namespace C_sharp_experience.MediaElements
     [Serializable]
     public class Audience
     {
-        public TypeAudience typeAudience { get; set; }
+        public TypeAudience typeAudience { get; set; } = TypeAudience.adults;
 
         public Audience(TypeAudience typeAudience)
         {

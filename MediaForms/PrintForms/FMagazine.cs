@@ -139,7 +139,8 @@ namespace C_sharp_experience.MediaForms.PrintForms
             {
                 Magazine magazine = new Magazine();
                 EditMagazine(magazine);
-                MainForm.AddMedia(magazine);
+                AddMedia add = MainForm.AddMedia;
+                add(magazine);
             }
             else
                 EditMagazine(FinalMagazine);
