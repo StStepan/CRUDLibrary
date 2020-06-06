@@ -1,0 +1,6 @@
+D:\Учеба\CodeStorage\StStepan\OOP\RC4\bin\Debug\EncryptionAlgorithms.cs
+D:\Учеба\CodeStorage\StStepan\OOP\RC4\bin\Debug\RC4Crypt.dll
+D:\Учеба\CodeStorage\StStepan\OOP\RC4\bin\Debug\RC4Crypt.pdb
+D:\Учеба\CodeStorage\StStepan\OOP\RC4\obj\Debug\RC4.csproj.CoreCompileInputs.cache
+D:\Учеба\CodeStorage\StStepan\OOP\RC4\obj\Debug\RC4Crypt.dll
+D:\Учеба\CodeStorage\StStepan\OOP\RC4\obj\Debug\RC4Crypt.pdb

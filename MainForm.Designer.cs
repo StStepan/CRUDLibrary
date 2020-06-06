@@ -38,6 +38,14 @@
             this.comboBMediaSelect = new System.Windows.Forms.ComboBox();
             this.BView = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxSerializers = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BLoadInfo = new System.Windows.Forms.Button();
+            this.BSaveInfo = new System.Windows.Forms.Button();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.comboBEncryption = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,9 +95,9 @@
             // 
             // BEdit
             // 
-            this.BEdit.Location = new System.Drawing.Point(22, 81);
+            this.BEdit.Location = new System.Drawing.Point(22, 169);
             this.BEdit.Name = "BEdit";
-            this.BEdit.Size = new System.Drawing.Size(220, 50);
+            this.BEdit.Size = new System.Drawing.Size(220, 30);
             this.BEdit.TabIndex = 2;
             this.BEdit.Text = "Редактировать";
             this.BEdit.UseVisualStyleBackColor = true;
@@ -97,9 +105,9 @@
             // 
             // BDelete
             // 
-            this.BDelete.Location = new System.Drawing.Point(22, 147);
+            this.BDelete.Location = new System.Drawing.Point(21, 244);
             this.BDelete.Name = "BDelete";
-            this.BDelete.Size = new System.Drawing.Size(220, 50);
+            this.BDelete.Size = new System.Drawing.Size(220, 33);
             this.BDelete.TabIndex = 3;
             this.BDelete.Text = "Удалить";
             this.BDelete.UseVisualStyleBackColor = true;
@@ -116,14 +124,14 @@
             "Научная работа"});
             this.comboBMediaSelect.Location = new System.Drawing.Point(121, 13);
             this.comboBMediaSelect.Name = "comboBMediaSelect";
-            this.comboBMediaSelect.Size = new System.Drawing.Size(130, 21);
+            this.comboBMediaSelect.Size = new System.Drawing.Size(131, 21);
             this.comboBMediaSelect.TabIndex = 4;
             // 
             // BView
             // 
-            this.BView.Location = new System.Drawing.Point(23, 222);
+            this.BView.Location = new System.Drawing.Point(22, 205);
             this.BView.Name = "BView";
-            this.BView.Size = new System.Drawing.Size(219, 52);
+            this.BView.Size = new System.Drawing.Size(219, 33);
             this.BView.TabIndex = 5;
             this.BView.Text = "Просмотреть";
             this.BView.UseVisualStyleBackColor = true;
@@ -131,6 +139,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.comboBEncryption);
+            this.groupBox1.Controls.Add(this.comboBoxSerializers);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.BLoadInfo);
+            this.groupBox1.Controls.Add(this.BSaveInfo);
             this.groupBox1.Controls.Add(this.BView);
             this.groupBox1.Controls.Add(this.comboBMediaSelect);
             this.groupBox1.Controls.Add(this.BDelete);
@@ -141,6 +155,76 @@
             this.groupBox1.Size = new System.Drawing.Size(258, 283);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxSerializers
+            // 
+            this.comboBoxSerializers.AutoCompleteCustomSource.AddRange(new string[] {
+            "Бинарный",
+            "JSON",
+            "Текстовый"});
+            this.comboBoxSerializers.FormattingEnabled = true;
+            this.comboBoxSerializers.Items.AddRange(new object[] {
+            "Бинарный",
+            "JSON",
+            "Текстовый"});
+            this.comboBoxSerializers.Location = new System.Drawing.Point(93, 42);
+            this.comboBoxSerializers.Name = "comboBoxSerializers";
+            this.comboBoxSerializers.Size = new System.Drawing.Size(148, 21);
+            this.comboBoxSerializers.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Вид";
+            // 
+            // BLoadInfo
+            // 
+            this.BLoadInfo.Location = new System.Drawing.Point(136, 86);
+            this.BLoadInfo.Name = "BLoadInfo";
+            this.BLoadInfo.Size = new System.Drawing.Size(105, 28);
+            this.BLoadInfo.TabIndex = 7;
+            this.BLoadInfo.Text = "Загрузить";
+            this.BLoadInfo.UseVisualStyleBackColor = true;
+            this.BLoadInfo.Click += new System.EventHandler(this.BLoadInfo_Click);
+            // 
+            // BSaveInfo
+            // 
+            this.BSaveInfo.Location = new System.Drawing.Point(21, 86);
+            this.BSaveInfo.Name = "BSaveInfo";
+            this.BSaveInfo.Size = new System.Drawing.Size(109, 28);
+            this.BSaveInfo.TabIndex = 6;
+            this.BSaveInfo.Text = "Сохранить";
+            this.BSaveInfo.UseVisualStyleBackColor = true;
+            this.BSaveInfo.Click += new System.EventHandler(this.BSaveInfo_Click);
+            // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.FileName = "ElectronicLibrary";
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "ElectronicLibrary";
+            // 
+            // comboBEncryption
+            // 
+            this.comboBEncryption.FormattingEnabled = true;
+            this.comboBEncryption.Location = new System.Drawing.Point(23, 133);
+            this.comboBEncryption.Name = "comboBEncryption";
+            this.comboBEncryption.Size = new System.Drawing.Size(219, 21);
+            this.comboBEncryption.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(19, 117);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Способ шифрования";
             // 
             // MainForm
             // 
@@ -153,6 +237,7 @@
             this.Name = "MainForm";
             this.Text = "Электронная библиотека";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -169,6 +254,14 @@
         private System.Windows.Forms.ComboBox comboBMediaSelect;
         private System.Windows.Forms.Button BView;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox comboBoxSerializers;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BLoadInfo;
+        private System.Windows.Forms.Button BSaveInfo;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBEncryption;
     }
 }
 
